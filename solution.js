@@ -1,6 +1,6 @@
 function squaresOfMax(a, b, c) {
-  // Write a function that takes three numbers and returns
-  // sum of squares of two largest
+  var res = a > b && (c > b && [a, c] || [a, b]) || c > a && [b, c] || [a, b];
+  return res[0]*res[0] + res[1]*res[1];
 }
 
 function drawTriangle() {
