@@ -4,15 +4,11 @@ function squaresOfMax(a, b, c) {
 }
 
 function drawTriangle() {
-  // Write a loop that makes seven calls to console.log to output the following triangle:
-  //
-  // #
-  // ##
-  // ###
-  // ####
-  // #####
-  // ######
-  // #######
+  var len = 7, char = '#';
+  var wall = new Array(len + 1).join(char);
+  for (var i = 1; i <= len; ++i) {
+    console.log(wall.substr(0, i));
+  }  
 }
 
 function fizzBuzz() {
