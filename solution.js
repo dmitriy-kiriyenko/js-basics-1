@@ -1,6 +1,5 @@
 function squaresOfMax(a, b, c) {
-  var res = a > b && (c > b && [a, c] || [a, b]) || c > a && [b, c] || [a, b];
-  return res[0]*res[0] + res[1]*res[1];
+  return a > b && c > b && a*a+c*c || c > a && b*b+c*c || a*a+b*b;
 }
 
 function drawTriangle() {
